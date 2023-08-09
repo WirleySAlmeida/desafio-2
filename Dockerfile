@@ -13,8 +13,6 @@ RUN touch /run/nginx.pid
 RUN chgrp -R 0 /var/log/nginx /run/nginx.pid
 RUN chmod -R g+rwx /var/log/nginx /run/nginx.pid
 
-ONBUILD COPY src /var/www/html
-
 EXPOSE 8080
 USER 1001
 
